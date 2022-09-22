@@ -1,0 +1,72 @@
+Name: Asteroids
+Id: g=2b6399255adabdb00f0665d87324f00c
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=d3d395674d4c41ffa3e2038ddd65dfb7
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Id: g=ec5b6166db5b60756f12d6e2f5d505a7
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=7254823ff2efed0e91cd14d3b9a3ef2c
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=cc1cd113fad96d64986e12323b8ed707
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"f6a61fccba76a6a4394262b2438895ba","Namespace":6}
+  Children:
+  - Name: Kind
+    Id: g=63625d4cfea57710c8100a8fb8b52bcb
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}
+- Name: PasswordPolicy
+  Id: g=aa1a36449b4a70c7b149c057a1d86909
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=daf0dd34b8484b3807f9c1826eaf43e5
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=067172755215e4e85e834d5c8d7a1e4b
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Id: g=f34588085bad28aa148c041838086440
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=303e4e8e4270db1719b62636aa3201cc
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
